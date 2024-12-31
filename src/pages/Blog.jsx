@@ -1,4 +1,5 @@
 import { BlogList } from '../components/BlogList';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 export function Blog() {
@@ -14,6 +15,7 @@ export function Blog() {
         </div>
         <BlogList />
       </div>
+      <Footer />
     </div>
   );
 }
