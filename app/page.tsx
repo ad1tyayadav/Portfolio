@@ -48,7 +48,7 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-4">
               <div className="text-3xl md:text-4xl font-bold flex items-center">
-                <ViewCounter endValue={1000000} />
+                <ViewCounter endValue={100000} />
                 <span className="ml-2">+</span>
               </div>
               <p className="text-gray-400">Views across platforms</p>
@@ -95,37 +95,37 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <VideoCard
                 title="From BCom to cracking Remote Job as Data Analyst | Non-Tech to Data Analyst Preparation Strategy"
-                views="38K+"
+                views="78K+"
                 platform="YouTube"
                 videoId="HV6SaYNkCLo"
               />
               <VideoCard
-                title="Honest Review of Scaler Data Science Course | Scaler Data Science Review"
-                views="12K+"
+                title="How I Got a Tech Job in US (Coding Journey)"
+                views="5K+"
                 platform="YouTube"
                 videoId="LCDszx2gHcg"
               />
               <VideoCard
-                title="How to Prepare for Data Analyst Interview | Data Analyst Interview Questions"
-                views="25K+"
+                title="Freelancing for beginners in 2025 l All you need to know!"
+                views="69K+"
                 platform="YouTube"
                 videoId="hD7MHRWnpfo"
               />
               <VideoCard
-                title="How to Become a Data Analyst in 2023 | Complete Roadmap"
-                views="42K+"
+                title="How I Cracked Microsoft | Where to Apply for Jobs | Resume shortlisting | 10K Special FAQ ♥️"
+                views="6.5K+"
                 platform="YouTube"
                 videoId="cG7KM78kYt8"
               />
               <VideoCard
-                title="How to Get a Data Analyst Job with No Experience | Data Analyst Career Path"
-                views="31K+"
+                title="What Are Pronouns? | Pronouns in English Grammar With Examples | Parts Of Speech | ChetChat"
+                views="18K+"
                 platform="YouTube"
                 videoId="LPy3vtwYjUw"
               />
               <VideoCard
-                title="Data Analyst Resume for Freshers | How to Make Data Analyst Resume"
-                views="18K+"
+                title="How to Use LinkedIn & Optimize Your Profile | Beginner-to-Advanced"
+                views="17.5K+"
                 platform="YouTube"
                 videoId="omfq4y6ZNjg"
               />
