@@ -153,7 +153,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-20 bg-black">
         <div className="container mx-auto">
