@@ -1,12 +1,13 @@
 "use client"
 
-import Link from "next/link"
+import { ArrowRight, MessageCircleCodeIcon } from "lucide-react"
 import Image from "next/image"
-import { ArrowRight, Play, PhoneIcon as WhatsappLogo } from "lucide-react"
+import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
-import { ViewCounter } from "@/components/view-counter"
 import { VideoCard } from "@/components/video-card"
+import { ViewCounter } from "@/components/view-counter"
+import InstagramReelCard from "@/components/insta-card"
 
 export default function Home() {
   return (
@@ -132,23 +133,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="">
             <h3 className="text-2xl font-bold mb-6 text-center">Short-Form Content</h3>
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <VideoCard
-                title="Instagram Reel - Brand AD"
+              <InstagramReelCard
+                title="Brand Ad Reel"
                 views="15K+"
-                platform="Instagram"
-                videoId="DC6Wi_Sp3Lr"
-                isShort={true}
+                reelUrl="https://www.instagram.com/p/DKO37_5pHYE/"
+                thumbnail="vid1.jpg"
               />
-              <VideoCard
-                title="Instagram Reel - Internship"
-                views="12K+"
-                platform="Instagram"
-                videoId="DAdCS5ACd7i"
-                isShort={true}
+              <InstagramReelCard
+                title="Internship Insta Reel"
+                views="25k+"
+                reelUrl="https://www.instagram.com/reel/DAdCS5ACd7i/?utm_source=ig_web_copy_link"
+                thumbnail="vid2.jpg"
               />
+              <InstagramReelCard
+                title="Brand Ad Reel"
+                views="11K+"
+                reelUrl="https://www.instagram.com/reel/DC6Wi_Sp3Lr/"
+                thumbnail="vid3.jpg"
+              />
+
             </div>
           </div>
         </div>
@@ -177,9 +183,9 @@ export default function Home() {
                     <span className="font-bold">01</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Cinematic Editing</h3>
+                    <h3 className="text-xl font-bold">Short-Form Content & Reels</h3>
                     <p className="text-gray-400">
-                      Professional color grading and visual effects that elevate your content
+                      Dynamic and impactful short videos designed to capture attention quickly — perfect for Instagram Reels, YouTube Shorts.
                     </p>
                   </div>
                 </div>
@@ -188,8 +194,8 @@ export default function Home() {
                     <span className="font-bold">02</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Engaging Storytelling</h3>
-                    <p className="text-gray-400">Narrative-driven editing that keeps viewers watching until the end</p>
+                    <h3 className="text-xl font-bold">Educational & Tutorial Videos</h3>
+                    <p className="text-gray-400">Experienced in editing English-speaking tutorials for channels like <b>ChetChat</b> — clear, informative, and audience-friendly content that keeps learners engaged.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -199,7 +205,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-bold">Podcast Editing</h3>
                     <p className="text-gray-400">
-                      Edit high quality podcast with podcast recap and detail editing
+                      High-quality podcast editing with detailed clean-ups, recap segments, and platform-ready formatting.
                     </p>
                   </div>
                 </div>
@@ -208,9 +214,9 @@ export default function Home() {
                     <span className="font-bold">04</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Platform Optimization</h3>
+                    <h3 className="text-xl font-bold">Vlogs & Lifestyle Content</h3>
                     <p className="text-gray-400">
-                      Content tailored specifically for YouTube, Instagram, and other platforms
+                      Smooth, story-driven editing that enhances personal narratives and keeps viewers coming back for more.
                     </p>
                   </div>
                 </div>
@@ -232,7 +238,7 @@ export default function Home() {
             className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-6 h-auto"
             onClick={() => window.open("https://wa.me/919129601109", "_blank")}
           >
-            <WhatsappLogo className="mr-2 h-6 w-6" />
+            <MessageCircleCodeIcon className="mr-2 h-6 w-6" />
             Contact Me on WhatsApp
           </Button>
           <p className="mt-6 text-gray-400">
